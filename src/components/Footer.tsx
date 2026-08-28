@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Instagram, Clock, Shield } from 'lucide-react';
 import { siteConfig } from '@/data/site';
+import { trackPhoneClick, trackEmailClick, trackAddressClick, trackCTAClick } from '@/utils/gtm';
 import iconLogoPreta from "../assets/logo/Ativo 1.png"
 
 const footerLinks = {
@@ -73,20 +74,35 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-800 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="flex items-start gap-3">
             <MapPin className="h-5 w-5 text-gold-500 shrink-0 mt-0.5" />
-            <div className="text-sm text-gray-400">
+            <a
+              href={siteConfig.mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackAddressClick('footer', siteConfig.address.street)}
+              className="text-sm text-gray-400 hover:text-gold-500 transition-colors block"
+            >
               <p className="font-semibold text-white">Endereço</p>
               <p>{siteConfig.address.street}</p>
               {siteConfig.address.district && <p>{siteConfig.address.district}</p>}
               <p>{siteConfig.address.city} — {siteConfig.address.state}</p>
               <p>CEP {siteConfig.address.zip}</p>
-            </div>
+            </a>
           </div>
           <div className="flex items-start gap-3">
             <Phone className="h-5 w-5 text-gold-500 shrink-0 mt-0.5" />
             <div className="text-sm text-gray-400">
               <p className="font-semibold text-white">Contato</p>
-              <p>{siteConfig.phone}</p>
-              <p>{siteConfig.email}</p>
+              <a
+                href={`tel:${siteConfig.phone}`}
+                onClick={() => trackPhoneClick('footer', siteConfig.whatsappNumber)}
+                className="hover:text-gold-500 transition-colors"
+              >{siteConfig.phone}</a>
+              <br />
+              <a
+                href={`mailto:${siteConfig.email}`}
+                onClick={() => trackEmailClick('footer', siteConfig.email)}
+                className="hover:text-gold-500 transition-colors"
+              >{siteConfig.email}</a>
             </div>
           </div>
           <div className="flex items-start gap-3">

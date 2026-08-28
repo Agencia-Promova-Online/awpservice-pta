@@ -1,5 +1,6 @@
 import { MessageCircle } from 'lucide-react';
-import { defaultWhatsAppMessage } from '@/data/site';
+import { siteConfig, defaultWhatsAppMessage } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 
 export function WhatsAppFloat() {
   return (
@@ -7,6 +8,7 @@ export function WhatsAppFloat() {
       href={defaultWhatsAppMessage}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackWhatsAppClick('floating_button', siteConfig.whatsappNumber)}
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-[0_0_25px_rgba(37,211,102,0.5)] transition-all duration-300 hover:scale-110 hover:shadow-[0_0_40px_rgba(37,211,102,0.7)]"
       aria-label="Falar no WhatsApp"
     >

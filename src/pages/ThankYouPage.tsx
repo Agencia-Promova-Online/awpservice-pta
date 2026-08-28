@@ -1,10 +1,21 @@
-﻿import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { CheckCircle2, MessageCircle, ArrowRight } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
-import { defaultWhatsAppMessage } from '@/data/site';
+import { siteConfig, defaultWhatsAppMessage } from '@/data/site';
+import { trackThankYouView, trackWhatsAppClick } from '@/utils/gtm';
 
 export function ThankYouPage() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    trackThankYouView(
+      pathname,
+      'Obrigado pelo seu contato | AWP Service'
+    );
+  }, [pathname]);
+
   return (
     <>
       <SEO
@@ -33,6 +44,7 @@ export function ThankYouPage() {
                   href={defaultWhatsAppMessage}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick('thank_you_page', siteConfig.whatsappNumber)}
                   className="btn-primary"
                 >
                   <MessageCircle className="h-5 w-5" />

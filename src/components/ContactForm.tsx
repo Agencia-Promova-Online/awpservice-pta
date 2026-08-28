@@ -41,6 +41,12 @@ export function ContactForm() {
         mensagem: formData.mensagem,
       });
 
+      trackContactFormSubmit(
+        'contact_page',
+        formData.equipamento || formData.marca || 'nao_informado',
+        formData.nome
+      );
+
       window.open(whatsappLink, '_blank');
       navigate('/obrigado');
     }, 600);

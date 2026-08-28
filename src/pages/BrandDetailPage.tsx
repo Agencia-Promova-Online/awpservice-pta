@@ -1,11 +1,12 @@
-﻿import { useParams, Navigate, Link } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { ArrowRight, MessageCircle, MapPin } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { CTABanner } from '@/components/CTABanner';
 import { brands } from '@/data/brands';
-import { buildWhatsAppLink } from '@/data/site';
+import { buildWhatsAppLink, siteConfig } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 
 export function BrandDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -103,7 +104,7 @@ export function BrandDetailPage() {
               <p className="text-gray-400 max-w-xl">
                 Nossa equipe está pronta para diagnosticar, reparar e manter sua máquina {brand.name} em operação.
               </p>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary mt-2">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick(`brand_detail_${brand.slug}`, siteConfig.whatsappNumber)} className="btn-primary mt-2">
                 <MessageCircle className="h-5 w-5" />
                 Falar no WhatsApp
               </a>

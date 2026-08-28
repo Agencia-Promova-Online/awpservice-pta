@@ -4,7 +4,8 @@ import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { blogArticles } from '@/data/blog';
-import { buildWhatsAppLink } from '@/data/site';
+import { buildWhatsAppLink, siteConfig } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 
 export function BlogArticlePage() {
   const { slug } = useParams<{ slug: string }>();
@@ -121,6 +122,7 @@ export function BlogArticlePage() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick(`blog_article_${article.slug}`, siteConfig.whatsappNumber)}
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-industrial-black px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-industrial-graphite hover:scale-105 shrink-0"
               >
                 <MessageCircle className="h-5 w-5 text-[#25D366]" />

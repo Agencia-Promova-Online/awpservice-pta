@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MessageCircle } from 'lucide-react';
 import { SEO } from '@/components/SEO';
@@ -6,7 +6,8 @@ import { Reveal } from '@/components/Reveal';
 import { PageHero } from '@/components/PageHero';
 import { CTABanner } from '@/components/CTABanner';
 import { machines, machineCategories } from '@/data/machines';
-import { buildWhatsAppLink } from '@/data/site';
+import { buildWhatsAppLink, siteConfig } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 
 export function MachinesPage() {
   const [filter, setFilter] = useState<string>('all');
@@ -110,6 +111,7 @@ export function MachinesPage() {
                           href={whatsappLink}
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() => trackWhatsAppClick(`machines_card_${m.slug}`, siteConfig.whatsappNumber)}
                           className="btn-primary !py-2.5 !px-4"
                           aria-label="Solicitar manutenção no WhatsApp"
                         >

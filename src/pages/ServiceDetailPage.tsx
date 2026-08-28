@@ -1,4 +1,4 @@
-﻿import { useParams, Navigate, Link } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { CheckCircle2, ArrowRight, MessageCircle } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
@@ -6,7 +6,8 @@ import { PageHero } from '@/components/PageHero';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { CTABanner } from '@/components/CTABanner';
 import { services } from '@/data/services';
-import { buildWhatsAppLink } from '@/data/site';
+import { buildWhatsAppLink, siteConfig } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 
 export function ServiceDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -63,7 +64,7 @@ export function ServiceDetailPage() {
             </h1>
             <p className="mt-5 text-lg text-gray-300 leading-relaxed max-w-2xl">{service.description}</p>
             <div className="mt-8">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick(`service_detail_${service.slug}`, siteConfig.whatsappNumber)} className="btn-primary">
                 <MessageCircle className="h-5 w-5" />
                 Solicitar este serviço
               </a>

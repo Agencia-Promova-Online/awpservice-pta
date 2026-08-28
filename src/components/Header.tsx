@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle, MapPin } from 'lucide-react';
 import { siteConfig, defaultWhatsAppMessage } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 import iconLogoPreta from "../assets/logo/Ativo 3.png"
 
 const navLinks = [
@@ -73,6 +74,7 @@ export function Header() {
             href={defaultWhatsAppMessage}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick('header_desktop', siteConfig.whatsappNumber)}
             className="hidden sm:inline-flex btn-primary !py-2.5 !px-5"
           >
             <MessageCircle className="h-4 w-4" />
@@ -110,6 +112,7 @@ export function Header() {
               href={defaultWhatsAppMessage}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('header_mobile_menu', siteConfig.whatsappNumber)}
               className="btn-primary mt-2"
             >
               <MessageCircle className="h-4 w-4" />

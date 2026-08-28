@@ -1,11 +1,12 @@
-﻿import { useParams, Navigate, Link } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { CheckCircle2, ArrowRight, MessageCircle, Wrench } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { CTABanner } from '@/components/CTABanner';
 import { machines } from '@/data/machines';
-import { buildWhatsAppLink } from '@/data/site';
+import { buildWhatsAppLink, siteConfig } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 
 export function MachineDetailPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -116,7 +117,7 @@ export function MachineDetailPage() {
               <p className="text-gray-400 max-w-xl">
                 Fale com nossa equipe técnica especializada em {machine.name.toLowerCase()} e receba um orçamento imediato.
               </p>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-primary mt-2">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick(`machine_detail_${machine.slug}`, siteConfig.whatsappNumber)} className="btn-primary mt-2">
                 <MessageCircle className="h-5 w-5" />
                 Solicitar manutenção no WhatsApp
               </a>

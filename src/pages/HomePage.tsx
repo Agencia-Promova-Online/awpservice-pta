@@ -23,8 +23,9 @@ import { testimonials } from '@/data/testimonials';
 import { blogArticles } from '@/data/blog';
 import { defaultWhatsAppMessage, siteConfig } from '@/data/site';
 import logo from "../assets/logo/Ativo 7.png"
-import imgHero from "../assets/image/pexels-photo-18543179.jpg"
+import imgHero from "../assets/image/pexels-photo-18543179.avif"
 import imgAbout from "../assets/image/pexels-photo-4489776.avif"
+import { trackWhatsAppClick } from '@/utils/gtm';
 
 const iconMap: Record<string, typeof ShieldCheck> = {
   ShieldCheck,

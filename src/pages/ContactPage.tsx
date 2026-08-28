@@ -4,6 +4,7 @@ import { Reveal } from '@/components/Reveal';
 import { PageHero } from '@/components/PageHero';
 import { ContactForm } from '@/components/ContactForm';
 import { siteConfig, defaultWhatsAppMessage } from '@/data/site';
+import { trackWhatsAppClick, trackPhoneClick, trackEmailClick, trackCTAClick, trackAddressClick } from '@/utils/gtm';
 
 export function ContactPage() {
   return (
@@ -84,15 +85,21 @@ export function ContactPage() {
 
                 <div className="card-surface p-6">
                   <h3 className="text-lg font-bold text-white mb-4">Endereço</h3>
-                  <div className="flex items-start gap-3">
+                  <a
+                    href={siteConfig.mapsLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackAddressClick('contact_page', siteConfig.address.street)}
+                    className="flex items-start gap-3 group"
+                  >
                     <MapPin className="h-5 w-5 text-gold-500 shrink-0 mt-0.5" />
                     <div className="text-sm text-gray-400">
-                      <p className="font-semibold text-white">{siteConfig.address.street}</p>
+                      <p className="font-semibold text-white group-hover:text-gold-500 transition-colors">{siteConfig.address.street}</p>
                       {siteConfig.address.district && <p>{siteConfig.address.district}</p>}
                       <p>{siteConfig.address.city} — {siteConfig.address.state}</p>
                       <p>CEP {siteConfig.address.zip}</p>
                     </div>
-                  </div>
+                  </a>
                 </div>
 
                 <div className="card-surface p-6">

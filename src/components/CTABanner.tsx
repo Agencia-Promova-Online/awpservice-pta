@@ -1,17 +1,20 @@
 import { MessageCircle } from 'lucide-react';
-import { buildWhatsAppLink } from '@/data/site';
+import { buildWhatsAppLink, siteConfig } from '@/data/site';
+import { trackWhatsAppClick } from '@/utils/gtm';
 import imgCTABackground from '../assets/image/pexels-photo-32437338.avif';
 
 interface CTABannerProps {
   title?: string;
   subtitle?: string;
   message?: string;
+  location?: string;
 }
 
 export function CTABanner({
   title = 'Precisa de assistência técnica para sua máquina PTA?',
   subtitle = 'Fale agora com a equipe técnica da AWP Service e receba um orçamento personalizado para sua frota.',
   message,
+  location = 'cta_banner',
 }: CTABannerProps) {
   const link = message
     ? buildWhatsAppLink(message)
@@ -36,6 +39,7 @@ export function CTABanner({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick(location, siteConfig.whatsappNumber)}
           className="inline-flex items-center justify-center gap-2 rounded-lg bg-industrial-black px-8 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-industrial-graphite hover:scale-105 active:scale-95 shrink-0"
         >
           <MessageCircle className="h-5 w-5 text-[#25D366]" />
