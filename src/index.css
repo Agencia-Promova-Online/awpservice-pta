@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-industrial-black text-gray-200 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-gold-500 text-industrial-black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-extrabold tracking-tight text-white;
+    line-height: 1.2;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-gold-500 px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-industrial-black transition-all duration-300 hover:bg-gold-400 hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-gray-600 bg-transparent px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:border-gold-500 hover:text-gold-500 active:scale-95;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#1DA851] hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] active:scale-95;
+  }
+
+  .section-label {
+    @apply inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold-500;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-gray-800 bg-industrial-graphite transition-all duration-300 hover:border-gold-500/40;
+  }
+
+  .prose-awp {
+    @apply text-gray-300 leading-relaxed;
+  }
+
+  .prose-awp h2 {
+    @apply mt-10 mb-4 text-2xl font-extrabold text-white;
+  }
+
+  .prose-awp h3 {
+    @apply mt-8 mb-3 text-xl font-bold text-white;
+  }
+
+  .prose-awp p {
+    @apply mb-5 text-gray-300 leading-[1.8];
+  }
+
+  .prose-awp ul {
+    @apply mb-5 space-y-2.5 pl-0;
+  }
+
+  .prose-awp li {
+    @apply flex gap-3 text-gray-300 leading-relaxed;
+  }
+
+  .prose-awp strong {
+    @apply font-bold text-white;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
