@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
@@ -41,13 +41,13 @@ export function BrandsPage() {
                   to={`/marcas/${brand.slug}`}
                   className="card-surface group overflow-hidden h-full block"
                 >
-                  <div className="p-8 text-center border-b border-gray-800">
-                    <span
-                      className="text-3xl font-extrabold tracking-tight transition-transform duration-300 group-hover:scale-110 inline-block"
-                      style={{ color: brand.accentColor }}
-                    >
-                      {brand.logoText}
-                    </span>
+                  <div className="p-8 text-center border-b border-gray-800 min-h-[140px] flex items-center justify-center">
+                    <img
+                      src={brand.logoImage}
+                      alt={`Logo ${brand.name}`}
+                      className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-3">

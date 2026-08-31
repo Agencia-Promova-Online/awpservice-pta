@@ -24,7 +24,7 @@ import { blogArticles } from '@/data/blog';
 import { defaultWhatsAppMessage, siteConfig } from '@/data/site';
 import logo from "../assets/logo/Ativo 7.png"
 import imgHero from "../assets/image/pexels-photo-18543179.avif"
-import imgAbout from "../assets/image/pexels-photo-4489776.avif"
+import imgAbout from "../assets/image/equipe-awp.jpeg"
 import { trackWhatsAppClick } from '@/utils/gtm';
 
 const iconMap: Record<string, typeof ShieldCheck> = {
@@ -228,7 +228,7 @@ export function HomePage() {
                 <img
                   src={imgAbout}
                   alt="Técnicos da AWP Service realizando manutenção em oficina"
-                  className="rounded-2xl object-cover w-full h-[420px]"
+                  className="rounded-2xl object-cover w-full h-[720px]"
                   loading="lazy"
                 />
                 <div className="absolute -bottom-6 -right-6 hidden md:block">
@@ -253,7 +253,7 @@ export function HomePage() {
                   Infraestrutura própria e corpo técnico especializado
                 </h2>
                 <p className="mt-5 text-gray-400 leading-relaxed">
-                  A AWP Service é a melhor empresa de assistência técnica de máquinas PTA do Brasil,
+                  A AWP Service é a uma das melhores empresas de assistência técnica de máquinas PEMT (Plataforma Elevatória Móvel de Trabalho) e PTA (Plataforma de Trabalho Aéreo) do Brasil,
                   com sede em Caxias do Sul — RS. Somos <strong className="text-white font-semibold">empresa autorizada multimarcas</strong>,
                   com oficina completa, laboratório de diagnósticos eletrônicos e estoque de peças
                   para as principais marcas do mercado.

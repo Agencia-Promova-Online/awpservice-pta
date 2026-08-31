@@ -46,12 +46,13 @@ export function BrandDetailPage() {
           />
           <Reveal>
             <div className="mt-6 flex items-center gap-4 mb-6">
-              <span
-                className="text-4xl md:text-6xl font-extrabold tracking-tight"
-                style={{ color: brand.accentColor }}
-              >
-                {brand.logoText}
-              </span>
+              <div className="flex h-20 md:h-24 items-center justify-center rounded-xl bg-white/5 border border-gray-800 px-5 md:px-8">
+                <img
+                  src={brand.logoImage}
+                  alt={`Logo ${brand.name}`}
+                  className="max-h-12 md:max-h-16 w-auto object-contain"
+                />
+              </div>
             </div>
             <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight max-w-3xl">
               Assistência técnica especializada em {brand.name}
@@ -124,14 +125,15 @@ export function BrandDetailPage() {
                 <Link
                   key={b.slug}
                   to={`/marcas/${b.slug}`}
-                  className="card-surface group p-5 text-center"
+                  className="card-surface group p-5 flex items-center justify-center min-h-[100px]"
+                  title={`Assistência técnica ${b.name} — AWP Service`}
                 >
-                  <span
-                    className="text-xl font-extrabold transition-colors group-hover:scale-110 inline-block"
-                    style={{ color: b.accentColor }}
-                  >
-                    {b.logoText}
-                  </span>
+                  <img
+                    src={b.logoImage}
+                    alt={`Logo ${b.name}`}
+                    className="max-h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
+                  />
                 </Link>
               ))}
           </div>
