@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle, MapPin } from 'lucide-react';
 import { siteConfig, defaultWhatsAppMessage } from '@/data/site';
 import { trackWhatsAppClick } from '@/utils/gtm';
-import iconLogoPreta from "../assets/logo/Ativo 3.png"
+import iconLogoPreta from "../assets/logo/Ativo 7.png"
 
 const navLinks = [
   { label: 'Início', to: '/' },
@@ -39,15 +39,10 @@ export function Header() {
     >
       <div className="container-wide flex items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-3 shrink-0">
-          <div className="flex h-10 w-10 items-center justify-center ">
-           <img src={iconLogoPreta} alt="AWP SERVICE" className="h-10 w-10" />
+          <div className="flex items-center justify-center ">
+           <img src={iconLogoPreta} alt="AWP SERVICE" className="h-16" />
           </div>
-          <div className="hidden sm:block">
-            <span className="block text-lg font-extrabold leading-tight text-white">AWP SERVICE</span>
-            <span className="flex items-center gap-1 text-[11px] text-gray-400 leading-tight">
-              <MapPin className="h-3 w-3 text-gold-500" /> Caxias do Sul — RS
-            </span>
-          </div>
+          
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
