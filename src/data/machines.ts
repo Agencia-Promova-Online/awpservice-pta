@@ -1,5 +1,5 @@
-import imgTesoura from '../assets/image/pexels-photo-13532460.avif';
-import imgArticuladas from '../assets/image/pexels-photo-18543179.avif';
+import imgTesoura from '../assets/image/tesoura.jpg';
+import imgArticuladas from '../assets/image/articulada.jpg';
 import imgTelescopicas from '../assets/image/pexels-photo-27330792.avif';
 import imgMastro from '../assets/image/pexels-photo-16105409.avif';
 
