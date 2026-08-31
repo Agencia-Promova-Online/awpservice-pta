@@ -23,7 +23,7 @@ import { testimonials } from '@/data/testimonials';
 import { blogArticles } from '@/data/blog';
 import { defaultWhatsAppMessage, siteConfig } from '@/data/site';
 import logo from "../assets/logo/Ativo 7.png"
-import imgHero from "../assets/image/pexels-photo-18543179.avif"
+import imgHero from "../assets/image/pexels-photo-18543179.jpg"
 import imgAbout from "../assets/image/equipe-awp.jpeg"
 import { trackWhatsAppClick } from '@/utils/gtm';
 
