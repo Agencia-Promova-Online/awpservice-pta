@@ -429,7 +429,7 @@ A escolha do fornecedor de manutenção é uma decisão estratégica que impacta
 - **Atendimento nacional:** para suportar máquinas em obras distantes da base
 - **Documentação completa:** para sua conformidade normativa
 
-A AWP Service atende todos esses requisitos a partir de sua sede em Caxias do Sul, com capacidade de deslocamento técnico para todo o Brasil. Nossa experiência com mais de 7 marcas de plataformas elevatórias nos permite ser um único fornecedor para toda a sua frota.
+A AWP Service atende todos esses requisitos a partir de sua sede em Caxias do Sul, com capacidade de deslocamento técnico para todo o Brasil. Nossa experiência com mais de 9 marcas de plataformas elevatórias nos permite ser um único fornecedor para toda a sua frota.
 
 ## Estratégia 5: Planejamento logístico
 

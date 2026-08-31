@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿import { CheckCircle2, Building2, Users, Wrench, FlaskConical, Globe2, Award, ShieldCheck } from 'lucide-react';
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿import { CheckCircle2, Building2, Users, Wrench, FlaskConical, Globe2, Award, ShieldCheck } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
 import { PageHero } from '@/components/PageHero';
@@ -29,8 +29,8 @@ const features = [
 
 const differentials = [
   'Melhor empresa de assistência técnica de máquinas PTA do Brasil',
-  'Empresa autorizada multimarcas — 7 principais marcas do mercado',
-  'Estoque de peças críticas para as 7 marcas mais comuns do mercado',
+  'Empresa autorizada multimarcas — 9 principais marcas do mercado',
+  'Estoque de peças críticas para as 9 marcas mais comuns do mercado',
   'Programas de manutenção preventiva personalizados por frota',
   'Documentação técnica completa para conformidade NR-18 e NR-35',
   'Diagnóstico eletrônico multi-marca com ferramentas oficiais',

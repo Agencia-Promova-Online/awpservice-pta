@@ -1,4 +1,4 @@
-﻿﻿﻿﻿import { Link } from 'react-router-dom';
+﻿﻿﻿﻿﻿﻿﻿import { Link } from 'react-router-dom';
 import {
   MessageCircle,
   ShieldCheck,
@@ -36,7 +36,7 @@ const iconMap: Record<string, typeof ShieldCheck> = {
 const stats = [
   { icon: Award, value: '15+', label: 'Anos de experiência' },
   { icon: Users, value: '500+', label: 'Clientes atendidos' },
-  { icon: Truck, value: '7', label: 'Marcas especializadas' },
+  { icon: Truck, value: '9', label: 'Marcas especializadas' },
   { icon: MapPin, value: 'BR', label: 'Atendimento nacional' },
 ];
 
@@ -45,7 +45,7 @@ export function HomePage() {
     <>
       <SEO
         title="AWP Service | Melhor Empresa de Assistência Técnica de Máquinas PTA do Brasil"
-        description="A melhor empresa de assistência técnica de máquinas PTA do Brasil. Manutenção preventiva, corretiva e diagnóstico avançado de plataformas elevatórias Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion e Sinoboom. Sede em Caxias do Sul - RS. Empresa autorizada multimarcas."
+        description="A melhor empresa de assistência técnica de máquinas PTA do Brasil. Manutenção preventiva, corretiva e diagnóstico avançado de plataformas elevatórias Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion, Sinoboom, LGMG e LiuGong. Sede em Caxias do Sul - RS. Empresa autorizada multimarcas."
         canonical="https://awpservicepta.com.br/"
         structuredData={{
           '@context': 'https://schema.org',
@@ -262,7 +262,7 @@ export function HomePage() {
                   {[
                     'Oficina equipada para reparos hidráulicos, elétricos e estruturais',
                     'Laboratório de diagnósticos com ferramentas proprietárias de cada fabricante',
-                    'Empresa autorizada — Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion e Sinoboom',
+                    'Empresa autorizada — Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion, Sinoboom, LGMG e LiuGong',
                     'Atendimento técnico em todo o Brasil a partir da matriz no RS',
                   ].map((item) => (
                     <li key={item} className="flex gap-3 text-gray-300">

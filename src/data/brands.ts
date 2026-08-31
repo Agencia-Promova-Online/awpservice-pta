@@ -5,6 +5,8 @@ import logoManitou from '../assets/marcas/logo-Manitou.webp';
 import logoSkyjack from '../assets/marcas/logo-skyjack.png';
 import logoZoomlion from '../assets/marcas/logo-zoomlion.png';
 import logoSinoboom from '../assets/marcas/logo-sinoboom.png';
+import logoLgmg from '../assets/marcas/logo-lgmg.png';
+import logoLiugong from '../assets/marcas/logo-LiuGong.png';
 
 export interface Brand {
   slug: string;
@@ -102,6 +104,30 @@ export const brands: Brand[] = [
     logoText: 'SINOBOOM',
     accentColor: '#E11D48',
     logoImage: logoSinoboom,
+  },
+  {
+    slug: 'lgmg',
+    name: 'LGMG',
+    country: 'China',
+    specialty: 'Plataformas tesoura, articuladas e telescópicas',
+    description:
+      'Marca chinesa com expansão acelerada no mercado brasileiro e global, muito adotada por empresas de locação de equipamentos. Plataformas LGMG combinam excelente custo-benefício com tecnologia moderna, incluindo sistemas de controle CANbus e displays digitais. A AWP Service possui ferramentas de diagnóstico compatíveis com a linha LGMG e mantém estoque estratégico de peças de desgaste para os modelos mais comuns operando no Brasil.',
+    machineTypes: ['Tesoura', 'Articuladas', 'Telescópicas'],
+    logoText: 'LGMG',
+    accentColor: '#E4002B',
+    logoImage: logoLgmg,
+  },
+  {
+    slug: 'liugong',
+    name: 'LiuGong',
+    country: 'China',
+    specialty: 'Manipuladores telescópicos e plataformas de trabalho aéreo',
+    description:
+      'Marca global de equipamentos para construção civil com mais de 60 anos de história, presente em mais de 130 países. LiuGong expandiu sua linha de plataformas de trabalho aéreo e manipuladores telescópicos nos últimos anos, combinando a robustez de uma marca de maquinário pesado com tecnologia moderna. A AWP Service atende toda a linha LiuGong de PTA com conhecimento técnico, ferramentas de diagnóstico e peças originais e paralelas de qualidade.',
+    machineTypes: ['Telescópicas', 'Articuladas', 'Tesoura'],
+    logoText: 'LIUGONG',
+    accentColor: '#F9A800',
+    logoImage: logoLiugong,
   },
 ];
 
