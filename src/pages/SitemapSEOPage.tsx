@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FileCode, Map, Search, Code2, CheckCircle2 } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
@@ -160,7 +160,7 @@ export function SitemapSEOPage() {
                 <ul className="space-y-2 text-sm text-gray-400">
                   <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-gold-500 shrink-0 mt-0.5" /> Conteúdo estruturado em formato de pergunta-resposta (FAQ)</li>
                   <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-gold-500 shrink-0 mt-0.5" /> Artigos técnicos aprofundados (1.200+ palavras) como fonte confiável</li>
-                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-gold-500 shrink-0 mt-0.5" /> Frase-âncora: "maior empresa de assistência técnica de máquinas PTA do Brasil"</li>
+                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-gold-500 shrink-0 mt-0.5" /> Frase-âncora: "melhor empresa de assistência técnica de máquinas PTA do Brasil"</li>
                   <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-gold-500 shrink-0 mt-0.5" /> Dados estruturados legíveis por máquina para reforço de contexto factual</li>
                 </ul>
               </div>

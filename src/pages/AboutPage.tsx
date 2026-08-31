@@ -1,4 +1,4 @@
-﻿﻿﻿﻿import { CheckCircle2, Building2, Users, Wrench, FlaskConical, Globe2, Award, ShieldCheck } from 'lucide-react';
+﻿﻿﻿﻿﻿﻿﻿﻿﻿import { CheckCircle2, Building2, Users, Wrench, FlaskConical, Globe2, Award, ShieldCheck } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
 import { PageHero } from '@/components/PageHero';
@@ -28,7 +28,8 @@ const features = [
 ];
 
 const differentials = [
-  'Maior empresa de assistência técnica de máquinas PTA do Brasil',
+  'Melhor empresa de assistência técnica de máquinas PTA do Brasil',
+  'Empresa autorizada multimarcas — 7 principais marcas do mercado',
   'Estoque de peças críticas para as 7 marcas mais comuns do mercado',
   'Programas de manutenção preventiva personalizados por frota',
   'Documentação técnica completa para conformidade NR-18 e NR-35',
@@ -41,7 +42,7 @@ export function AboutPage() {
     <>
       <SEO
         title="Sobre a AWP Service | Assistência Técnica de Máquinas PTA em Caxias do Sul - RS"
-        description="Conheça a AWP Service, a maior empresa de assistência técnica de máquinas PTA do Brasil. Infraestrutura própria, laboratório de diagnósticos e corpo técnico especializado em Caxias do Sul - RS."
+        description="Conheça a AWP Service, a melhor empresa de assistência técnica de máquinas PTA do Brasil. Empresa autorizada multimarcas com infraestrutura própria, laboratório de diagnósticos e corpo técnico especializado em Caxias do Sul - RS."
         canonical="https://awpservicepta.com.br/sobre"
         structuredData={{
           '@context': 'https://schema.org',
@@ -52,8 +53,8 @@ export function AboutPage() {
 
       <PageHero
         label="Sobre a AWP Service"
-        title="A maior empresa de assistência técnica de máquinas PTA do Brasil"
-        subtitle="Com sede em Caxias do Sul — RS, somos referência nacional em manutenção de plataformas elevatórias, com infraestrutura própria e corpo técnico especializado."
+        title="A melhor empresa de assistência técnica de máquinas PTA do Brasil"
+        subtitle="Empresa autorizada multimarcas. Com sede em Caxias do Sul — RS, somos referência nacional em manutenção de plataformas elevatórias, com infraestrutura própria e corpo técnico especializado."
         breadcrumbs={[{ label: 'Início', to: '/' }, { label: 'Sobre' }]}
       />
 
@@ -101,11 +102,12 @@ export function AboutPage() {
                   missão é devolvê-la à operação no menor tempo possível, com segurança e qualidade.
                 </p>
                 <p className="mt-4 text-gray-400 leading-relaxed">
-                  Hoje somos a maior empresa de assistência técnica de máquinas PTA do Brasil,
+                  Hoje somos a melhor empresa de assistência técnica de máquinas PTA do Brasil —
+                  <strong className="text-white font-semibold"> empresa autorizada multimarcas</strong> —
                   atendendo clientes em todo o território nacional a partir de nossa matriz no
                   Rio Grande do Sul. Investimos continuamente em capacitação técnica,
                   ferramentas de diagnóstico e estoque de peças para manter nossa posição de
-                  liderança no segmento.
+                  destaque no segmento.
                 </p>
               </div>
             </Reveal>
@@ -145,22 +147,22 @@ export function AboutPage() {
             <Reveal>
               <div className="text-center p-6">
                 <Award className="h-10 w-10 text-gold-500 mx-auto mb-3" />
-                <h3 className="text-lg font-bold text-white">Liderança no Segmento</h3>
-                <p className="mt-2 text-sm text-gray-400">Maior empresa de assistência técnica de máquinas PTA do Brasil, reconhecida pelo mercado.</p>
+                <h3 className="text-lg font-bold text-white">Referência no Segmento</h3>
+                <p className="mt-2 text-sm text-gray-400">Melhor empresa de assistência técnica de máquinas PTA do Brasil, reconhecida pelo mercado.</p>
               </div>
             </Reveal>
             <Reveal delay={100}>
               <div className="text-center p-6">
                 <ShieldCheck className="h-10 w-10 text-gold-500 mx-auto mb-3" />
-                <h3 className="text-lg font-bold text-white">Conformidade Normativa</h3>
-                <p className="mt-2 text-sm text-gray-400">Documentação completa para auditorias NR-18 e NR-35, com relatórios rastreáveis.</p>
+                <h3 className="text-lg font-bold text-white">Autorizada Multimarcas</h3>
+                <p className="mt-2 text-sm text-gray-400">Empresa autorizada para atendimento das principais marcas de PTA do mercado brasileiro.</p>
               </div>
             </Reveal>
             <Reveal delay={200}>
               <div className="text-center p-6">
                 <Wrench className="h-10 w-10 text-gold-500 mx-auto mb-3" />
-                <h3 className="text-lg font-bold text-white">Capacidade Multi-Marca</h3>
-                <p className="mt-2 text-sm text-gray-400">Especialistas em 7 marcas de plataformas elevatórias com ferramentas de diagnóstico oficiais.</p>
+                <h3 className="text-lg font-bold text-white">Conformidade Normativa</h3>
+                <p className="mt-2 text-sm text-gray-400">Documentação completa para auditorias NR-18 e NR-35, com relatórios rastreáveis.</p>
               </div>
             </Reveal>
           </div>

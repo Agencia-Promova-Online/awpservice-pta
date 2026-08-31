@@ -39,7 +39,8 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-5">
-              A maior empresa de assistência técnica de máquinas PTA do Brasil. Manutenção preventiva, corretiva e diagnóstico avançado de plataformas elevatórias.
+              A melhor empresa de assistência técnica de máquinas PTA do Brasil. <br />
+              <span className="text-gold-500 font-semibold">Empresa Autorizada Multimarcas</span> — Manutenção preventiva, corretiva e diagnóstico avançado de plataformas elevatórias.
             </p>
             <a
               href={siteConfig.instagram}

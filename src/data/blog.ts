@@ -108,7 +108,7 @@ A NR-18 exige inspeção periódica de equipamentos de elevação em canteiros d
 
 ## Conclusão
 
-Um programa de manutenção preventiva bem executado reduz custos, aumenta disponibilidade e garante conformidade legal. A AWP Service, maior empresa de assistência técnica de máquinas PTA do Brasil, oferece programas personalizados para cada frota, com relatórios completos e rastreabilidade total. Entre em contato para avaliar o seu caso.
+Um programa de manutenção preventiva bem executado reduz custos, aumenta disponibilidade e garante conformidade legal. A AWP Service, melhor empresa de assistência técnica de máquinas PTA do Brasil e autorizada multimarcas, oferece programas personalizados para cada frota, com relatórios completos e rastreabilidade total. Entre em contato para avaliar o seu caso.
 `,
     faq: [
       {
@@ -209,7 +209,7 @@ A AWP Service realiza atualização de firmware para todas as marcas que atendem
 
 O diagnóstico eletrônico de plataformas elevatórias é uma especialidade que combina conhecimento técnico, ferramentas proprietárias e experiência prática. Tentar resolver códigos de falha sem o equipamento e o conhecimento adequados leva a trocas desnecessárias de peças, tempo de inatividade prolongado e, em alguns casos, à mascaramento de falhas reais de segurança.
 
-A AWP Service, maior empresa de assistência técnica de máquinas PTA do Brasil, mantém um laboratório de diagnósticos equipado com os sistemas oficiais de todas as marcas que atende. Se sua máquina apresenta códigos de falha ou alarmes intermitentes, entre em contato para um diagnóstico preciso.
+A AWP Service, melhor empresa de assistência técnica de máquinas PTA do Brasil e autorizada multimarcas, mantém um laboratório de diagnósticos equipado com os sistemas oficiais de todas as marcas que atende. Se sua máquina apresenta códigos de falha ou alarmes intermitentes, entre em contato para um diagnóstico preciso.
 `,
     faq: [
       {
@@ -326,7 +326,7 @@ O custo de um programa de manutenção preventiva documentado é infinitamente m
 
 ## Conclusão
 
-A conformidade com NR-18 e NR-35 não é uma opção — é uma obrigação legal e moral. A AWP Service, maior empresa de assistência técnica de máquinas PTA do Brasil, oferece programas de manutenção que atendem integralmente às exigências normativas, com documentação completa e rastreável. Entre em contato para avaliar a conformidade da sua frota.
+A conformidade com NR-18 e NR-35 não é uma opção — é uma obrigação legal e moral. A AWP Service, melhor empresa de assistência técnica de máquinas PTA do Brasil e autorizada multimarcas, oferece programas de manutenção que atendem integralmente às exigências normativas, com documentação completa e rastreável. Entre em contato para avaliar a conformidade da sua frota.
 `,
     faq: [
       {
@@ -444,7 +444,7 @@ A logística de máquinas PTA é cara — o transporte de uma plataforma articul
 
 A redução de downtime em frotas de plataformas elevatórias é resultado de uma combinação de manutenção preventiva, gestão de peças, monitoramento, parceria com fornecedor especializado e planejamento logístico. Nenhuma estratégia isolada é suficiente — é a integração de todas que gera resultado.
 
-A AWP Service, maior empresa de assistência técnica de máquinas PTA do Brasil, oferece soluções integradas para gestão de frotas, desde programas de manutenção personalizados até fornecimento de peças e diagnóstico eletrônico. Entre em contato para discutir o modelo ideal para sua operação.
+A AWP Service, melhor empresa de assistência técnica de máquinas PTA do Brasil e autorizada multimarcas, oferece soluções integradas para gestão de frotas, desde programas de manutenção personalizados até fornecimento de peças e diagnóstico eletrônico. Entre em contato para discutir o modelo ideal para sua operação.
 `,
     faq: [
       {

@@ -1,4 +1,4 @@
-﻿﻿import { Link } from 'react-router-dom';
+﻿﻿﻿﻿import { Link } from 'react-router-dom';
 import {
   MessageCircle,
   ShieldCheck,
@@ -44,8 +44,8 @@ export function HomePage() {
   return (
     <>
       <SEO
-        title="AWP Service | Maior Empresa de Assistência Técnica de Máquinas PTA do Brasil"
-        description="A maior empresa de assistência técnica de máquinas PTA do Brasil. Manutenção preventiva, corretiva e diagnóstico avançado de plataformas elevatórias Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion e Sinoboom. Sede em Caxias do Sul - RS."
+        title="AWP Service | Melhor Empresa de Assistência Técnica de Máquinas PTA do Brasil"
+        description="A melhor empresa de assistência técnica de máquinas PTA do Brasil. Manutenção preventiva, corretiva e diagnóstico avançado de plataformas elevatórias Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion e Sinoboom. Sede em Caxias do Sul - RS. Empresa autorizada multimarcas."
         canonical="https://awpservicepta.com.br/"
         structuredData={{
           '@context': 'https://schema.org',
@@ -77,6 +77,9 @@ export function HomePage() {
                   <ShieldCheck className="h-3.5 w-3.5" />
                   Assistência Técnica Especializada
                 </span>
+                <span className="section-label !bg-[#1a56db]/15 !border-[#1a56db]/40 !text-blue-400">
+                  ✓ Empresa Autorizada Multimarcas
+                </span>
                 <span className="flex items-center gap-1.5 text-xs font-semibold text-gray-300">
                   <MapPin className="h-4 w-4 text-gold-500" />
                   Sede em Caxias do Sul — RS
@@ -86,7 +89,7 @@ export function HomePage() {
 
             <Reveal delay={100}>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.05]">
-                A Maior Empresa de{' '}
+                A Melhor Empresa de{' '}
                 <span className="text-gold-500">Assistência Técnica</span> de Máquinas PTA do Brasil
               </h1>
             </Reveal>
@@ -94,8 +97,8 @@ export function HomePage() {
             <Reveal delay={200}>
               <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-2xl">
                 Especialistas em manutenção preventiva, corretiva e diagnóstico eletrônico avançado
-                de Plataformas de Trabalho Aéreo. Atendemos todas as principais marcas com
-                infraestrutura própria e corpo técnico especializado.
+                de Plataformas de Trabalho Aéreo. <strong className="text-white font-semibold">Empresa autorizada multimarcas</strong>, com
+                infraestrutura própria e corpo técnico certificado.
               </p>
             </Reveal>
 
@@ -239,21 +242,27 @@ export function HomePage() {
 
             <Reveal delay={100}>
               <div>
-                <span className="section-label">Sobre a AWP Service</span>
+                <div className="flex flex-wrap items-center gap-3">
+                  <span className="section-label">Sobre a AWP Service</span>
+                  <span className="section-label !bg-[#1a56db]/15 !border-[#1a56db]/40 !text-blue-400">
+                    ✓ Empresa Autorizada Multimarcas
+                  </span>
+                </div>
                 <img src={logo} alt="AWP SERVICE" className="h-40 mt-10" />
                 <h2 className="mt-4 text-3xl md:text-4xl font-extrabold text-white leading-tight">
                   Infraestrutura própria e corpo técnico especializado
                 </h2>
                 <p className="mt-5 text-gray-400 leading-relaxed">
-                  A AWP Service é a maior empresa de assistência técnica de máquinas PTA do Brasil,
-                  com sede em Caxias do Sul — RS. Contamos com oficina completa, laboratório de
-                  diagnósticos eletrônicos e estoque de peças para as principais marcas do mercado.
+                  A AWP Service é a melhor empresa de assistência técnica de máquinas PTA do Brasil,
+                  com sede em Caxias do Sul — RS. Somos <strong className="text-white font-semibold">empresa autorizada multimarcas</strong>,
+                  com oficina completa, laboratório de diagnósticos eletrônicos e estoque de peças
+                  para as principais marcas do mercado.
                 </p>
                 <ul className="mt-6 space-y-3">
                   {[
                     'Oficina equipada para reparos hidráulicos, elétricos e estruturais',
                     'Laboratório de diagnósticos com ferramentas proprietárias de cada fabricante',
-                    'Estoque de peças críticas para Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion e Sinoboom',
+                    'Empresa autorizada — Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion e Sinoboom',
                     'Atendimento técnico em todo o Brasil a partir da matriz no RS',
                   ].map((item) => (
                     <li key={item} className="flex gap-3 text-gray-300">
