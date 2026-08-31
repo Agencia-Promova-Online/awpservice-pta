@@ -9,6 +9,7 @@ const footerLinks = {
     { label: 'Sobre a AWP Service', to: '/sobre' },
     { label: 'Serviços', to: '/servicos' },
     { label: 'Marcas Atendidas', to: '/marcas' },
+    { label: 'Peças para Máquinas PTA', to: '/pecas' },
     { label: 'Catálogo de Máquinas', to: '/maquinas' },
   ],
   Conteúdo: [

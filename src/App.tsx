@@ -14,6 +14,7 @@ import { BrandDetailPage } from '@/pages/BrandDetailPage';
 import { BlogPage } from '@/pages/BlogPage';
 import { BlogArticlePage } from '@/pages/BlogArticlePage';
 import { ContactPage } from '@/pages/ContactPage';
+import PartsPage from '@/pages/PartsPage';
 import { ThankYouPage } from '@/pages/ThankYouPage';
 import { SitemapSEOPage } from '@/pages/SitemapSEOPage';
 import { PrivacyPolicyPage } from '@/pages/PrivacyPolicyPage';
@@ -37,6 +38,7 @@ function App() {
             <Route path="/marcas/:slug" element={<BrandDetailPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogArticlePage />} />
+            <Route path="/pecas" element={<PartsPage />} />
             <Route path="/contato" element={<ContactPage />} />
             <Route path="/obrigado" element={<ThankYouPage />} />
             <Route path="/sitemap-seo" element={<SitemapSEOPage />} />

@@ -11,6 +11,7 @@ type GTMEvent =
   | { event: 'address_click'; link_location: string; address_label: string }
   | { event: 'contact_form_submit'; form_location: string; service?: string; user_name?: string }
   | { event: 'thank_you_view'; page_path: string; page_title: string }
+  | { event: 'parts_consultation_click'; part_category: string; link_location: string }
   | { event: 'cta_click'; cta_text: string; cta_location: string };
 
 export function pushGTMEvent(event: GTMEvent) {
@@ -39,3 +40,6 @@ export const trackThankYouView = (path: string, title: string) =>
 
 export const trackCTAClick = (text: string, location: string) =>
   pushGTMEvent({ event: 'cta_click', cta_text: text, cta_location: location });
+
+export const trackPartsConsultationClick = (partCategory: string, location: string) =>
+  pushGTMEvent({ event: 'parts_consultation_click', part_category: partCategory, link_location: location });

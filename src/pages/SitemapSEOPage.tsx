@@ -24,6 +24,9 @@ const sitemapPages = [
   { url: '/marcas/skyjack', label: 'Skyjack', description: 'Assistência técnica Skyjack' },
   { url: '/marcas/zoomlion', label: 'Zoomlion', description: 'Assistência técnica Zoomlion' },
   { url: '/marcas/sinoboom', label: 'Sinoboom', description: 'Assistência técnica Sinoboom' },
+  { url: '/marcas/lgmg', label: 'LGMG', description: 'Assistência técnica LGMG' },
+  { url: '/marcas/liugong', label: 'LiuGong', description: 'Assistência técnica LiuGong' },
+  { url: '/pecas', label: 'Peças para Máquinas PTA', description: 'Catálogo de peças: baterias, bombas, joysticks, motores e mais' },
   { url: '/blog', label: 'Blog Técnico', description: 'Artigos técnicos sobre manutenção de PTA' },
   { url: '/blog/guia-manutencao-preventiva-pta', label: 'Guia de Manutenção Preventiva', description: 'Checklists e calibração' },
   { url: '/blog/diagnostico-eletronico-modulos-falha', label: 'Diagnóstico Eletrônico', description: 'Códigos de falha multi-marca' },
@@ -41,6 +44,7 @@ const schemas = [
   { type: 'FAQPage', description: 'Perguntas e respostas em artigos para extração por IAs' },
   { type: 'Service', description: 'Descrição estruturada de cada serviço oferecido' },
   { type: 'Brand', description: 'Identificação de cada marca atendida' },
+  { type: 'Product / ItemList', description: 'Categorias de peças e componentes para PTA' },
   { type: 'BreadcrumbList', description: 'Trilha de navegação em todas as páginas internas' },
 ];
 

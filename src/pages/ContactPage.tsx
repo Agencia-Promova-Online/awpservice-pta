@@ -1,4 +1,4 @@
-﻿﻿import { MapPin, Phone, Mail, Instagram, Clock, MessageCircle } from 'lucide-react';
+﻿﻿﻿﻿import { MapPin, Phone, Mail, Instagram, Clock, MessageCircle } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
 import { PageHero } from '@/components/PageHero';

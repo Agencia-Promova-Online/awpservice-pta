@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿import { CheckCircle2, Building2, Users, Wrench, FlaskConical, Globe2, Award, ShieldCheck } from 'lucide-react';
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿import { CheckCircle2, Building2, Users, Wrench, FlaskConical, Globe2, Award, ShieldCheck } from 'lucide-react';
 import { SEO } from '@/components/SEO';
 import { Reveal } from '@/components/Reveal';
 import { PageHero } from '@/components/PageHero';
