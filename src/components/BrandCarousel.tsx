@@ -26,13 +26,14 @@ export function BrandCarousel() {
               key={i}
               to={`/marcas/${brand.slug}`}
               className="flex h-28 w-56 shrink-0 items-center justify-center rounded-xl border border-gray-800 bg-industrial-graphite px-8 transition-all duration-300 hover:border-gold-500/50 hover:bg-industrial-steel"
+              title={`${brand.name} — Assistência Técnica AWP Service`}
             >
-              <span
-                className="text-2xl font-extrabold tracking-tight"
-                style={{ color: brand.accentColor }}
-              >
-                {brand.logoText}
-              </span>
+              <img
+                src={brand.logoImage}
+                alt={`Logo ${brand.name}`}
+                className="max-h-16 w-auto object-contain transition-all duration-300 hover:scale-105"
+                loading="lazy"
+              />
             </Link>
           ))}
         </div>

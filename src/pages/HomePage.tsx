@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+﻿﻿import { Link } from 'react-router-dom';
 import {
   MessageCircle,
   ShieldCheck,
@@ -34,7 +34,7 @@ const iconMap: Record<string, typeof ShieldCheck> = {
 };
 
 const stats = [
-  { icon: Award, value: '12+', label: 'Anos de experiência' },
+  { icon: Award, value: '15+', label: 'Anos de experiência' },
   { icon: Users, value: '500+', label: 'Clientes atendidos' },
   { icon: Truck, value: '7', label: 'Marcas especializadas' },
   { icon: MapPin, value: 'BR', label: 'Atendimento nacional' },
@@ -230,7 +230,7 @@ export function HomePage() {
                 />
                 <div className="absolute -bottom-6 -right-6 hidden md:block">
                   <div className="rounded-2xl bg-gold-500 p-6 text-industrial-black shadow-xl">
-                    <p className="text-4xl font-extrabold">12+</p>
+                    <p className="text-4xl font-extrabold">15+</p>
                     <p className="text-sm font-semibold">anos de experiência</p>
                   </div>
                 </div>

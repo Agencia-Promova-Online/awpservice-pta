@@ -1,3 +1,11 @@
+import logoHaulotte from '../assets/marcas/logo-haulotte.png';
+import logoGenie from '../assets/marcas/logo-genie.png';
+import logoJlg from '../assets/marcas/logo-jlg.png';
+import logoManitou from '../assets/marcas/logo-Manitou.webp';
+import logoSkyjack from '../assets/marcas/logo-skyjack.png';
+import logoZoomlion from '../assets/marcas/logo-zoomlion.png';
+import logoSinoboom from '../assets/marcas/logo-sinoboom.png';
+
 export interface Brand {
   slug: string;
   name: string;
@@ -7,6 +15,7 @@ export interface Brand {
   machineTypes: string[];
   logoText: string;
   accentColor: string;
+  logoImage: string;
 }
 
 export const brands: Brand[] = [
@@ -20,6 +29,7 @@ export const brands: Brand[] = [
     machineTypes: ['Articuladas', 'Tesoura', 'Telescópicas', 'Mastro'],
     logoText: 'HAULOTTE',
     accentColor: '#E63946',
+    logoImage: logoHaulotte,
   },
   {
     slug: 'genie',
@@ -31,6 +41,7 @@ export const brands: Brand[] = [
     machineTypes: ['Articuladas', 'Tesoura', 'Telescópicas', 'Mastro'],
     logoText: 'GENIE',
     accentColor: '#E63946',
+    logoImage: logoGenie,
   },
   {
     slug: 'jlg',
@@ -42,6 +53,7 @@ export const brands: Brand[] = [
     machineTypes: ['Articuladas', 'Tesoura', 'Telescópicas', 'Mastro'],
     logoText: 'JLG',
     accentColor: '#FF6600',
+    logoImage: logoJlg,
   },
   {
     slug: 'manitou',
@@ -53,6 +65,7 @@ export const brands: Brand[] = [
     machineTypes: ['Articuladas', 'Telescópicas'],
     logoText: 'MANITOU',
     accentColor: '#D61B1B',
+    logoImage: logoManitou,
   },
   {
     slug: 'skyjack',
@@ -64,6 +77,7 @@ export const brands: Brand[] = [
     machineTypes: ['Tesoura', 'Articuladas'],
     logoText: 'SKYJACK',
     accentColor: '#FBC80C',
+    logoImage: logoSkyjack,
   },
   {
     slug: 'zoomlion',
@@ -75,6 +89,7 @@ export const brands: Brand[] = [
     machineTypes: ['Articuladas', 'Telescópicas'],
     logoText: 'ZOOMLION',
     accentColor: '#1A56DB',
+    logoImage: logoZoomlion,
   },
   {
     slug: 'sinoboom',
@@ -86,5 +101,7 @@ export const brands: Brand[] = [
     machineTypes: ['Articuladas', 'Tesoura'],
     logoText: 'SINOBOOM',
     accentColor: '#E11D48',
+    logoImage: logoSinoboom,
   },
 ];
+
