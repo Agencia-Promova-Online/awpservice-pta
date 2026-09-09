@@ -18,8 +18,8 @@ export const siteConfig = {
     country: 'Brasil',
   },
   mapsEmbed:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.8!2d-51.1794!3d-29.1681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRua%20Mario%20Danton%20Leit%C3%A3o%2C%20699%2C%20Caxias%20do%20Sul%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr',
-  mapsLink: 'https://www.google.com/maps/search/?api=1&query=Rua+Mario+Danton+Leitao+699+Caxias+do+Sul+RS',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31862489.56503199!2d-51.3168626!3d-14.40952615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88409110db442eaf%3A0xd5148e9a35ff3b21!2sAWP%20Service%20PTA!5e1!3m2!1spt-BR!2sbr!4v1788987381684!5m2!1spt-BR!2sbr',
+  mapsLink: 'https://maps.app.goo.gl/FzBik8gJWqCLCTVJ7',
   hours: [
     { day: 'Segunda a Sexta', time: '07:30 — 18:00' },
     { day: 'Sábado', time: '08:00 — 12:00' },
