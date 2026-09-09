@@ -26,6 +26,7 @@ const sitemapPages = [
   { url: '/marcas/sinoboom', label: 'Sinoboom', description: 'Assistência técnica Sinoboom' },
   { url: '/marcas/lgmg', label: 'LGMG', description: 'Assistência técnica LGMG' },
   { url: '/marcas/liugong', label: 'LiuGong', description: 'Assistência técnica LiuGong' },
+  { url: '/marcas/hangcha', label: 'Hangcha', description: 'Assistência técnica Hangcha' },
   { url: '/pecas', label: 'Peças para Máquinas PTA', description: 'Catálogo de peças: baterias, bombas, joysticks, motores e mais' },
   { url: '/blog', label: 'Blog Técnico', description: 'Artigos técnicos sobre manutenção de PTA' },
   { url: '/blog/guia-manutencao-preventiva-pta', label: 'Guia de Manutenção Preventiva', description: 'Checklists e calibração' },

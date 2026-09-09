@@ -7,6 +7,7 @@ import logoZoomlion from '../assets/marcas/logo-zoomlion.png';
 import logoSinoboom from '../assets/marcas/logo-sinoboom.png';
 import logoLgmg from '../assets/marcas/logo-lgmg.png';
 import logoLiugong from '../assets/marcas/logo-LiuGong.png';
+import logoHangcha from '../assets/marcas/logo-hangcha.png';
 
 export interface Brand {
   slug: string;
@@ -128,6 +129,18 @@ export const brands: Brand[] = [
     logoText: 'LIUGONG',
     accentColor: '#F9A800',
     logoImage: logoLiugong,
+  },
+  {
+    slug: 'hangcha',
+    name: 'Hangcha',
+    country: 'China',
+    specialty: 'Plataformas de mastro, tesoura e equipamentos logísticos',
+    description:
+      'Hangcha é uma das maiores fabricantes de equipamentos de movimentação de cargas do mundo, com mais de 50 anos de atuação e forte presença no mercado brasileiro. Reconhecida por sua linha de empilhadeiras, expandiu de forma consistente as plataformas de trabalho aéreo, com destaque para plataformas de mastro autopropelidas e tesouras compactas para operação em galpões logísticos e centros de distribuição. Os equipamentos Hangcha são construídos para operação intensiva em ambientes de logística, e-commerce e varejo. A AWP Service atende toda a linha Hangcha de PTA com conhecimento técnico especializado, suporte a sistemas de controle CANbus e estoque estratégico de peças de desgaste e componentes elétricos para garantir máxima disponibilidade de frota.',
+    machineTypes: ['Mastro', 'Tesoura', 'Articuladas', 'Telescópicas'],
+    logoText: 'HANGCHA',
+    accentColor: '#0057A8',
+    logoImage: logoHangcha,
   },
 ];
 

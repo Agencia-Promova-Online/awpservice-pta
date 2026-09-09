@@ -27,7 +27,7 @@ export default function PartsPage() {
       <PageHero
         label={<span className="inline-flex items-center gap-2"><Package className="h-3.5 w-3.5" /> Catálogo de Peças</span>}
         title="Peças e Componentes Originais para Máquinas PTA"
-        subtitle="A AWP Service, melhor empresa de assistência técnica de máquinas PTA do Brasil, também fornece peças testadas e compatíveis com as principais marcas do mercado: Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion, Sinoboom, LGMG e LiuGong."
+        subtitle="A AWP Service, melhor empresa de assistência técnica de máquinas PTA do Brasil, também fornece peças testadas e compatíveis com as principais marcas do mercado: Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion, Sinoboom, LGMG, LiuGong e Hangcha."
         breadcrumbs={[{ label: 'Início', to: '/' }, { label: 'Peças' }]}
       >
         <a
@@ -117,13 +117,13 @@ export default function PartsPage() {
                 </h2>
                 <p className="mt-5 text-gray-400 leading-relaxed">
                   Todas as nossas peças são testadas antes do envio e compatíveis com equipamentos
-                  Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion, Sinoboom, LGMG e LiuGong.
+                  Haulotte, Genie, JLG, Manitou, Skyjack, Zoomlion, Sinoboom, LGMG, LiuGong e Hangcha.
                   Qualidade confirmada pela equipe técnica autorizada multimarcas da AWP Service.
                 </p>
                 <ul className="mt-6 space-y-3">
                   {[
                     'Peças 100% testadas antes do envio',
-                    'Compatibilidade confirmada com 9 principais marcas',
+                    'Compatibilidade confirmada com 10 principais marcas',
                     'Garantia aplicada em todas as peças vendidas',
                     'Suporte técnico pós-venda incluso',
                   ].map((item) => (
